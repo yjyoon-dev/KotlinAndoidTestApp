@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="button">버튼</string>
-    <string name="helloKotlin">Hello Kotlin!</string>
+    <string name="string_01">안드로이드스튜디오안드로이드스튜디오안드로이드스튜디오</string>
+    <string name="string_02">텍스트2</string>
 </resources>
