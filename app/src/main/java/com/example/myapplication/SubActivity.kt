@@ -44,5 +44,10 @@ class SubActivity : AppCompatActivity() {
             val intent = Intent(this,RecyclerActivity::class.java)
             startActivity(intent)
         }
+
+        openFragmentButton.setOnClickListener {
+            val intent = Intent(this,FragmentActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

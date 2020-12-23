@@ -5,13 +5,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.recycler_item_layout.view.*
+import kotlinx.android.synthetic.main.recycler_item.view.*
 import java.text.SimpleDateFormat
 
 class CustomAdapter : RecyclerView.Adapter<Holder>(){
     var listData = mutableListOf<Memo>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.recycler_item_layout, parent,false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.recycler_item, parent,false)
         return Holder(view)
     }
 
