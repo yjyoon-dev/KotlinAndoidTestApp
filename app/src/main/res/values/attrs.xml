@@ -3,4 +3,7 @@
         <attr name="fullscreenBackgroundColor" format="color" />
         <attr name="fullscreenTextColor" format="color" />
     </declare-styleable>
+    <declare-styleable name="CustomText">
+        <attr name="delimeter" format="string"/>
+    </declare-styleable>
 </resources>

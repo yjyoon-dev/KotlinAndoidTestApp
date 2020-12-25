@@ -48,6 +48,12 @@ class SubActivity : AppCompatActivity() {
         openFragmentButton.setOnClickListener {
             val intent = Intent(this,FragmentActivity::class.java)
             startActivity(intent)
+
+        }
+
+        customViewBtn.setOnClickListener {
+            val intent = Intent(this,CustomViewActivity::class.java)
+            startActivity(intent)
         }
     }
 }
