@@ -34,7 +34,7 @@ class Holder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
     fun setMemo(memo: Memo){
         itemView.textNo.text = "${memo.no}"
-        itemView.textTitle.text = "${memo.title}"
+        itemView.textTitle.text = memo.title
 
         var sdf = SimpleDateFormat("yyyy/MM/dd")
         var formattedDate = sdf.format(memo.timestamp)

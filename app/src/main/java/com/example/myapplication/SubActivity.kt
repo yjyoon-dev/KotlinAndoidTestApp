@@ -4,11 +4,9 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_sub.*
 
 class SubActivity : AppCompatActivity() {
@@ -53,6 +51,16 @@ class SubActivity : AppCompatActivity() {
 
         customViewBtn.setOnClickListener {
             val intent = Intent(this,CustomViewActivity::class.java)
+            startActivity(intent)
+        }
+
+        viewPagerFragmentBtn.setOnClickListener {
+            val intent = Intent(this ,FragmentPagerActivity::class.java)
+            startActivity(intent)
+        }
+
+        viewPagerLayoutBtn.setOnClickListener {
+            val intent = Intent(this ,ViewPagerActivity::class.java)
             startActivity(intent)
         }
     }

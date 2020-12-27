@@ -22,7 +22,7 @@ class RecyclerActivity : AppCompatActivity() {
         }
 
         val data:MutableList<Memo> = loadData()
-        var adapter = CustomAdapter()
+        val adapter = CustomAdapter()
         adapter.listData = data;
 
         recyclerView.adapter = adapter
