@@ -63,5 +63,10 @@ class SubActivity : AppCompatActivity() {
             val intent = Intent(this ,ViewPagerActivity::class.java)
             startActivity(intent)
         }
+
+        permissionBtn.setOnClickListener {
+            val intent = Intent(this ,PermissionActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
