@@ -68,5 +68,15 @@ class SubActivity : AppCompatActivity() {
             val intent = Intent(this ,PermissionActivity::class.java)
             startActivity(intent)
         }
+
+        openFileIOBtn.setOnClickListener {
+            val intent = Intent(this ,FileIOActivity::class.java)
+            startActivity(intent)
+        }
+
+        openPrefBtn.setOnClickListener {
+            val intent = Intent(this ,PreferenceActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -12,6 +12,7 @@ import android.widget.CompoundButton
 import android.widget.RadioGroup
 import android.widget.SeekBar
 import android.widget.Toast
+import androidx.preference.PreferenceManager
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.concurrent.thread
 
@@ -41,6 +42,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val shared = PreferenceManager.getDefaultSharedPreferences((this))
+        val name = shared.getString("key_edit_name","")
+
+        welcome.text = "Welcome ${name}!"
 
         var subActivityIntent = Intent(this,SubActivity::class.java)
 
